@@ -1,0 +1,8 @@
+﻿PS> git branch -vv
+  bug-fix-typo 8b2bbcb Clarify calculator result text
+* main         8b2bbcb [origin/main: ahead 2] Clarify calculator result text
+PS> git status --short --branch
+## main...origin/main [ahead 2]
+?? bug-fix-revert
+?? forked-repo
+?? merge_branches

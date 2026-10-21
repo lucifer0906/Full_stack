@@ -1,0 +1,5 @@
+﻿PS> curl -s https://api.github.com/repos/lucifer0906/Full_stack/pulls?state=all
+[
+
+]
+Result: no pull requests are present, and repository metadata reports fork=false; a fork/PR cannot be verified for this repository without creating them on GitHub.

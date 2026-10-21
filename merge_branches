@@ -1,0 +1,14 @@
+﻿PS> git checkout main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+git : Switched to branch 'main'
+At line:2 char:154
++ ... eckout main'; $out += (git -C .\Full_stack checkout main 2>&1 | Out-S ...
++                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Switched to branch 'main':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+PS> git merge bug-fix-typo
+Updating 61bfcb9..8b2bbcb
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
