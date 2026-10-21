@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Interest Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="maindiv">
+    <header class="hero">
+      <p class="eyebrow">Financial planning made simple</p>
+      <h1>Simple Interest Calculator</h1>
+      <p class="intro">Estimate the interest earned on your principal amount over time.</p>
+    </header>
+
+    <form class="calculator-form" onsubmit="compute(); return false;">
+      <div class="form-group">
+        <label for="principal">Principal Amount</label>
+        <div class="input-with-prefix">
+          <span aria-hidden="true">$</span>
+          <input id="principal" name="principal" type="number" min="0" step="0.01" placeholder="1000" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="label-row">
+          <label for="rate">Rate of Interest</label>
+          <output id="rateValue" for="rate">10%</output>
+        </div>
+        <input id="rate" name="rate" type="range" min="1" max="20" value="10" oninput="updateRate()" aria-describedby="rateValue">
+        <div class="range-labels" aria-hidden="true">
+          <span>1%</span>
+          <span>20%</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="years">No. of Years</label>
+        <select id="years" name="years">
+          <option value="1">1 year</option>
+          <option value="2">2 years</option>
+          <option value="3">3 years</option>
+          <option value="4">4 years</option>
+          <option value="5">5 years</option>
+          <option value="6">6 years</option>
+          <option value="7">7 years</option>
+          <option value="8">8 years</option>
+          <option value="9">9 years</option>
+          <option value="10">10 years</option>
+        </select>
+      </div>
+
+      <button type="submit">Compute Interest</button>
+    </form>
+
+    <div id="result" class="result" aria-live="polite">
+      Enter your details and select “Compute Interest” to see your result.
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
