@@ -2,6 +2,8 @@
 
 A responsive web application that calculates simple interest from a principal amount, an interest rate, and a number of years. The result includes the calculated interest and the future year in which it will be received.
 
+Results are presented in a clear, highlighted summary.
+
 ## Formula
 
 ```text
